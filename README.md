@@ -12,65 +12,65 @@ To install the required python libraries, use pip to install:
 # Run Code
 
 ## Preprocess
-This code is based on INTERACTION dataset v1.2. The dataset folder arrangement is as follows:
-.
-├── maps
-|   ├── {Scene_name_n}.osm_xy
-|   ├── {Scene_name_n}.osm
-|   ├── ...
-|   └── ...
-├── train
-|   ├── {Scene_name_n}_train.csv
-|   ├── ...
-|   └── ...
-├── val
-|   ├── {Scene_name_n}_val.csv
-|   ├── ...
-|   └── ...
-└── test
-    ├── {Scene_name_n}_obs.csv
-    ├── ...
-    └── ...
+This code is based on INTERACTION dataset v1.2. The dataset folder arrangement is as follows:<br>
+.<br>
+├── maps<br>
+|&emsp;&emsp;├── {Scene_name_n}.osm_xy<br>
+|&emsp;&emsp;├── {Scene_name_n}.osm<br>
+|&emsp;&emsp;├── ...<br>
+|&emsp;&emsp;└── ...<br>
+├── train<br>
+|&emsp;&emsp;├── {Scene_name_n}_train.csv<br>
+|&emsp;&emsp;├── ...<br>
+|&emsp;&emsp;└── ...<br>
+├── val<br>
+|&emsp;&emsp;├── {Scene_name_n}_val.csv<br>
+|&emsp;&emsp;├── ...<br>
+|&emsp;&emsp;└── ...<br>
+└── test<br>
+ &emsp;&emsp;├── {Scene_name_n}_obs.csv<br>
+ &emsp;&emsp;├── ...<br>
+ &emsp;&emsp;└── ...<br>
 
-To preprocess dataset, run: `python data_preprocess.py --root /path/to/dataset --split {train/val/test}`, the processed data would be store as '.pyg' and '.pt', folder structure are as follows:
-.
-├── maps
-|   ├── {Scene_name_n}.osm_xy
-|   ├── {Scene_name_n}.osm
-|   ├── ...
-|   └── ...
-├── maps_png
-|   ├── {Scene_name_n}_map.png
-|   ├── ...
-|   └── ...
-├── train
-|   ├── {Scene_name_n}_train.csv
-|   ├── ...
-|   └── ...
-├── val
-|   ├── {Scene_name_n}_val.csv
-|   ├── ...
-|   └── ...
-├── test
-|   ├── {Scene_name_n}_obs.csv
-|   ├── ...
-|   └── ...
-└── processed
-    ├── train
-    |   ├── {Scene_name_n}_{case_id}.pyg
-    |   ├── {Scene_name_n}_map.pt
-    |   ├── ...
-    |   └── ...
-    ├── val
-    |   ├── {Scene_name_n}_{case_id}.pyg
-    |   ├── {Scene_name_n}_map.pt
-    |   ├── ...
-    |   └── ...
-    └── test
-        ├── {Scene_name_n}_{case_id}.pyg
-        ├── {Scene_name_n}_map.pt
-        ├── ...
-        └── ...
+To preprocess dataset, run: `python data_preprocess.py --root /path/to/dataset --split {train/val/test}`, the processed data would be store as '.pyg' and '.pt', folder structure are as follows:<br>
+.<br>
+├── maps<br>
+|&emsp;&emsp;├── {Scene_name_n}.osm_xy<br>
+|&emsp;&emsp;├── {Scene_name_n}.osm<br>
+|&emsp;&emsp;├── ...<br>
+|&emsp;&emsp;└── ...<br>
+├── maps_png<br>
+|&emsp;&emsp;├── {Scene_name_n}_map.png<br>
+|&emsp;&emsp;├── ...<br>
+|&emsp;&emsp;└── ...<br>
+├── train<br>
+|&emsp;&emsp;├── {Scene_name_n}_train.csv<br>
+|&emsp;&emsp;├── ...<br>
+|&emsp;&emsp;└── ...<br>
+├── val<br>
+|&emsp;&emsp;├── {Scene_name_n}_val.csv<br>
+|&emsp;&emsp;├── ...<br>
+|&emsp;&emsp;└── ...<br>
+├── test<br>
+|&emsp;&emsp;├── {Scene_name_n}_obs.csv<br>
+|&emsp;&emsp;├── ...<br>
+|&emsp;&emsp;└── ...<br>
+└── processed<br>
+&emsp;&emsp;├── train<br>
+&emsp;&emsp;|&emsp;&emsp;├── {Scene_name_n}_{case_id}.pyg<br>
+&emsp;&emsp;|&emsp;&emsp;├── {Scene_name_n}_map.pt<br>
+&emsp;&emsp;|&emsp;&emsp;├── ...<br>
+&emsp;&emsp;|&emsp;&emsp;└── ...<br>
+&emsp;&emsp;├── val<br>
+&emsp;&emsp;|&emsp;&emsp;├── {Scene_name_n}_{case_id}.pyg<br>
+&emsp;&emsp;|&emsp;&emsp;├── {Scene_name_n}_map.pt<br>
+&emsp;&emsp;|&emsp;&emsp;├── ...<br>
+&emsp;&emsp;|&emsp;&emsp;└── ...<br>
+&emsp;&emsp;└── test<br>
+&emsp;&emsp; &emsp;&emsp;├── {Scene_name_n}_{case_id}.pyg<br>
+&emsp;&emsp; &emsp;&emsp;├── {Scene_name_n}_map.pt<br>
+&emsp;&emsp; &emsp;&emsp;├── ...<br>
+&emsp;&emsp; &emsp;&emsp;└── ...<br>
 
 Please notice that the '.png' map are provided by the original repo.
 
