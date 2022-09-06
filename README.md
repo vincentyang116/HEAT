@@ -1,10 +1,11 @@
 # Basic Info
 This is the unofficial implementation of the paper "Multi-Agent Trajectory Prediction with Heterogeneous Edge-Enhanced Graph Attention Network", Arxiv ID: 2106.07161.
-The code is based on repo of the author. Since the Interaction Dataset has updated to v1.2 which is incomplete with the author's code, we re-code the dataset related part, and also made some simplification on the code.
+
+The code is based on repo of the author. Since the Interaction Dataset has updated to v1.2 which is incompatible with the author's code, we re-code the dataset related part, and also made some simplification on the code.
 
 
 # Requirements
-To install the required python libraries, use pip install: 
+To install the required python libraries, use pip to install: 
 `pip install -r requirements.txt`
 
 
